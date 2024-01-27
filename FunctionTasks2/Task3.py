@@ -9,3 +9,15 @@
 дить ли еще один рекурсивный вызов. Ваша функция не должна принимать аргумен-
 тов, а возвращать будет числовое значе
 """
+
+
+def sum(n):
+    s = 0
+    if n == '':
+        return s
+    else:
+        s += int(n)
+        return s + sum(input('Enter the number: '))
+
+
+print(sum(input('Enter the number:  ')))

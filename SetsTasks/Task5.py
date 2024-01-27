@@ -18,3 +18,25 @@ English
 3 - [Russian, English,Japenese]
 1 - [English]
 """
+
+n = int(input("Всего учеников:  "))
+langall = list()
+
+for i in range(n):
+    while n != 0:
+        lang = set()
+        for _ in range(ngroup := int(input('количество учеников в группе:  '))):
+            lang.add(input('Введите язык:  '))
+            n -= 1
+
+        langall.append(lang)
+
+inter = langall[0]
+union = langall[0]
+
+for i in range(len(langall)):
+    inter = inter & set(langall[i])
+    union = union | set(langall[i])
+
+print(f"Языки, которые знают все школьники -- {inter}")
+print(f"Языки, которые знает хотя бы 1 школьник -- {union}")

@@ -7,3 +7,17 @@
 
 Примечание. Наличие функции является обязательным. Функция должна принимать количество набранных баллов.
 """
+
+
+def discount(score):
+    if score in range(0, 50):
+        return 10
+    elif score in range(50, 100):
+        return 15
+    elif score >= 100:
+        return 20
+    else:
+        return "None"
+
+
+print(discount(int(input())))

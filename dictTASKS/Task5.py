@@ -8,3 +8,10 @@ emails = {'mgu.edu': ['andrei_serov', 'alexander_pushkin', 'elena_belova', 'kiri
       	'yandex.ru': ['ekaterina_ivanova', 'glebova_nastya'],
       	'harvard.edu': ['john.doe', 'mark.zuckerberg', 'helen_hunt'],
       	'mail.ru': ['roman.kolosov', 'ilya_gromov', 'masha.yashkina']}
+
+
+for key in emails.keys():
+	print('\n', key)
+	for value in emails.values():
+		for real_value in value:
+			print(real_value + '@' + key)

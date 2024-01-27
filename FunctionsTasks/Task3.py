@@ -7,3 +7,9 @@
 
 Выдачу допуска реализуй как функцию.
 """
+true = []
+false = []
+def exam(name,score):
+    if score >= 50:
+        
+        return 'Допущен'

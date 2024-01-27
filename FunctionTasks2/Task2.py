@@ -5,3 +5,10 @@
 расстояние поездки в километрах и возвращающую итоговую сумму опла-
 ты такси.
 """
+
+
+def taxi(distance):
+    return 4 + (distance * 1000 / 140) * 0.25
+
+
+print(f'The price of the trip is {taxi(int(input("Enter the distance of the trip:  ")))}')
